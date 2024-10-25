@@ -1,84 +1,188 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Irem Web Site</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Header Menu Start -->
-    <section class="">
-      <div class="container mx-auto border-b pb-2 border-[#975F9E]">
-        <div class="flex justify-between">
-          <!-- Left Item  -->
-          <div class="flex">
-            <a href="/">
-              <img
-                src="/asssets/images/logo.png"
-                alt="Logo"
-                class="w-[120px]"
-              />
-            </a>
-            <ul class="text-lg text-[#975F9E] flex gap-10 mt-20 font-bold">
-              <li>
-                <a
-                  href="/hakkimizda.html"
-                  class="hover:underline hover:text-red-400"
-                  >Hakkımızda</a
-                >
-              </li>
-              <li>
-                <a
-                  class="hover:underline hover:text-red-400"
-                  href="/kadromuz.html"
-                  >Kadromuz</a
-                >
-              </li>
-              <li>
-                <a
-                  class="hover:underline hover:text-red-400"
-                  href="/bolumler.html"
-                  >Bölümler</a
-                >
-              </li>
-              <li>
-                <a
-                  class="hover:underline hover:text-red-400"
-                  href="/iletisim.html"
-                  >İletişim</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!-- Right Item -->
-          <div class="flex items-end gap-3 mb-2 font-bold text-white">
-            <input
-              type="text"
-              class="border rounded-md p-2 border-gray-300 text-[#975F9E]"
-            />
-            <button class="bg-[#975F9E] p-2 rounded-md">
-              <img
-                src="/asssets/images/magnifier.svg"
-                alt="Arama"
-                class="w-6"
-              />
-            </button>
-            <button class="bg-[#975F9E] p-2 rounded-md">Giriş</button>
-            <button class="bg-[#975F9E] p-2 rounded-md">Üye Ol</button>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Irem Web Site</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header Menu Start -->
+  <section class="">
+    <div class="container mx-auto border-b pb-2 border-[#975F9E]">
+      <div class="flex justify-between">
+        <!-- Left Item  -->
+        <div class="flex">
+          <a href="/">
+            <img src="/asssets/images/logo.png" alt="Logo" class="w-[120px]" />
+          </a>
+          <ul class="text-lg text-[#975F9E] flex gap-10 mt-20 font-bold">
+            <li>
+              <a href="/hakkimizda.html" class="hover:underline hover:text-red-400">Hakkımızda</a>
+            </li>
+            <li>
+              <a class="hover:underline hover:text-red-400" href="/kadromuz.html">Kadromuz</a>
+            </li>
+            <li>
+              <a class="hover:underline hover:text-red-400" href="/bolumler.html">Bölümler</a>
+            </li>
+            <li>
+              <a class="hover:underline hover:text-red-400" href="/iletisim.html">İletişim</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Right Item -->
+        <div class="flex items-end gap-3 mb-2 font-bold text-white">
+          <input type="text" class="border rounded-md p-2 border-gray-300 text-[#975F9E]" />
+          <button class="bg-[#975F9E] p-2 rounded-md">
+            <img src="/asssets/images/magnifier.svg" alt="Arama" class="w-6" />
+          </button>
+          <button class="bg-[#975F9E] p-2 rounded-md">Giriş</button>
+          <button class="bg-[#975F9E] p-2 rounded-md">Üye Ol</button>
         </div>
       </div>
-    </section>
-    <!-- Header Menu Finish -->
-    <section class="container mx-auto mt-5">Hakkimizda</section>
-  </body>
+    </div>
+  </section>
+  <!-- Bölüm1 -->
+  <section class="container mx-80 mt-4 flex p-5">
+    <a href="Gorsel.html"
+      class="flex items-center  bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl text-gray-900 hover:bg-violet-800 dark:border-x-purple-950 dark:bg-blue-300 dark:hover:bg-violet-900">
+      <img class="object-cover w-full rounded-t-lg h-98 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+        src="/asssets/images/slides/seans.png" alt="">
+      <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          Seanslarımız Nasıl Oluyor?
+        </h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          Seanslarımız bire bir 90 dakika şeklinde ilerler.
+          60 dakikası birbirmizi tanımak ve yakınlık kurmak ile ilerler.
+          Kalan 30 dakikası ilerlenilmesi gereken süreç hakkında konuşulur.
+
+        </p>
+      </div>
+    </a>
+
+
+  </section>
+</body>
+<!-- Misyon & Vizyon -->
+<div class="container mx-auto px-4 py-16">
+  <div class="grid md:grid-cols-2 gap-8">
+    <div class="bg-white p-8 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-bold mb-4 text-blue-800">Misyonumuz</h2>
+      <p class="text-gray-600">Doktorlarımız işlerinde tecrübeli ve uzman olup en yüksek kalitede hizmet
+        sunarlar. Doktorlarımız isteyenlere 7 kişilik grublar halinde veya birebir seanslar sunarlar
+      </p>
+    </div>
+    <div class="bg-white p-8 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-bold mb-4 text-blue-800">Vizyonumuz</h2>
+      <p class="text-gray-600">
+        Klasiğin dışına çıkarak doğa ile bütünleşip ruhumuza en iyi gelen şekilde, hipnoz yöntemi, ayna önünde hizmetler
+        gibi yeni türde
+        hizmetlere kadar çıkmış bulunmaktayız. Amacımız her daim sizlere hizmet etmektir.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Değerlerimiz -->
+<div class="bg-gray-50 py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Değerlerimiz</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center p-6">
+        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Yenilikçilik</h3>
+        <p class="text-gray-600">Daha farklı şekillerde kendimizi buluyoruz.</p>
+      </div>
+      <div class="text-center p-6">
+        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Grup seanslar</h3>
+        <p class="text-gray-600">El ele daha da güçlüyüz.</p>
+      </div>
+      <div class="text-center p-6">
+        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Güvenilirlik</h3>
+        <p class="text-gray-600">Her daim seans içinde olan seans içindedir.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bağış-->
+<div class="container mx-auto px-4 py-16">
+  <h2 class="text-3xl font-bold text-center mb-12">Kuruma Bağışta Bulunanlar</h2>
+  <div class="grid md:grid-cols-4 gap-8">
+    <div class="text-center">
+      <img src="/api/placeholder/150/150" alt="Takım Üyesi" class="rounded-full mx-auto mb-4">
+      <h3 class="text-xl font-semibold">Lorem, ipsum.</h3>
+      <p class="text-gray-600">Lorem.</p>
+    </div>
+    <div class="text-center">
+      <img src="/api/placeholder/150/150" alt="Takım Üyesi" class="rounded-full mx-auto mb-4">
+      <h3 class="text-xl font-semibold">Lorem, ipsum.</h3>
+      <p class="text-gray-600">Lorem.</p>
+    </div>
+    <div class="text-center">
+      <img src="/api/placeholder/150/150" alt="Takım Üyesi" class="rounded-full mx-auto mb-4">
+      <h3 class="text-xl font-semibold">Lorem, ipsum.</h3>
+      <p class="text-gray-600">Lorem, ipsum.</p>
+    </div>
+    <div class="text-center">
+      <img src="/api/placeholder/150/150" alt="Takım Üyesi" class="rounded-full mx-auto mb-4">
+      <h3 class="text-xl font-semibold">Lorem, ipsum.</h3>
+      <p class="text-gray-600">Lorem, ipsum dolor.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Son kısım -->
+<div class="bg-blue-900 text-white py-16">
+  <div class="container mx-auto px-4">
+    <div class="grid md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div class="text-4xl font-bold mb-2">500+</div>
+        <p>Mutlu Müşteri</p>
+      </div>
+      <div>
+        <div class="text-4xl font-bold mb-2">20</div>
+        <p>Uzman Doktor</p>
+      </div>
+      <div>
+        <div class="text-4xl font-bold mb-2">100</div>
+        <p>Grup Seanslarımız</p>
+      </div>
+      <div>
+        <div class="text-4xl font-bold mb-2">1999</div>
+        <p>Yılından itibaren hizmet içindeyiz</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+
 </html>

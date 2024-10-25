@@ -1,205 +1,158 @@
 <!DOCTYPE html>
 <html lang="tr" class="bg-white">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Irem Web Site</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body">
-    <!-- Header Menu Start -->
-    <section class="">
-      <div class="container mx-auto border-b pb-2 border-[#975F9E]">
-        <div class="flex justify-between">
-          <!-- Left Item  -->
-          <div class="flex">
-            <a href="/">
-              <img
-                src="/asssets/images/logo.png"
-                alt="Logo"
-                class="w-[120px]"
-              />
-            </a>
-            <ul class="text-lg text-[#975F9E] flex gap-10 mt-20 font-bold">
-              <li>
-                <a
-                  href="/hakkimizda.html"
-                  class="hover:underline hover:text-red-400"
-                  >Hakkımızda</a
-                >
-              </li>
-              <li>
-                <a
-                  class="hover:underline hover:text-red-400"
-                  href="/kadromuz.html"
-                  >Kadromuz</a
-                >
-              </li>
-              <li>
-                <a
-                  class="hover:underline hover:text-red-400"
-                  href="/bolumler.html"
-                  >Bölümler</a
-                >
-              </li>
-              <li>
-                <a
-                  class="hover:underline hover:text-red-400"
-                  href="/iletisim.html"
-                  >İletişim</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!-- Right Item -->
-          <div class="flex items-end gap-3 mb-2 font-bold text-white">
-            <input
-              type="text"
-              class="border rounded-md p-2 border-gray-300 text-[#975F9E]"
-              placeholder="Site içi arama..."
-            />
-            <button class="bg-[#975F9E] p-2 rounded-md">
-              <img
-                src="/asssets/images/magnifier.svg"
-                alt="Arama"
-                class="w-6"
-              />
-            </button>
-            <button class="bg-[#975F9E] p-2 rounded-md">Giriş</button>
-            <button class="bg-[#975F9E] p-2 rounded-md">Üye Ol</button>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Irem Web Site</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+    rel="stylesheet" />
+</head>
+<body">
+  <!-- Header Menu Start -->
+  <section class="">
+    <div class="container mx-auto border-b pb-2 border-[#975F9E]">
+      <div class="flex justify-between">
+        <!-- Left Item  -->
+        <div class="flex">
+          <a href="/">
+            <img src="/asssets/images/logo.png" alt="Logo" class="w-[120px]" />
+          </a>
+          <ul class="text-lg text-[#975F9E] flex gap-10 mt-20 font-bold">
+            <li>
+              <a href="/hakkimizda.html" class="hover:underline hover:text-red-400">Hakkımızda</a>
+            </li>
+            <li>
+              <a class="hover:underline hover:text-red-400" href="/kadromuz.html">Kadromuz</a>
+            </li>
+            <li>
+              <a class="hover:underline hover:text-red-400" href="/iletisim.html">İletişim</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Right Item -->
+        <div class="flex items-end gap-3 mb-2 font-bold text-white">
+          <input type="text" class="border rounded-md p-2 border-gray-300 text-[#975F9E]"
+            placeholder="Site içi arama..." />
+          <button class="bg-[#975F9E] p-2 rounded-md">
+            <img src="/asssets/images/magnifier.svg" alt="Arama" class="w-6" />
+          </button>
+          <button class="bg-[#975F9E] p-2 rounded-md">Giriş</button>
+          <button class="bg-[#975F9E] p-2 rounded-md">Üye Ol</button>
         </div>
       </div>
-    </section>
-    <!-- Header Menu Finish -->    
-    <!-- Slide Start -->
-    <section class="container mx-auto mt-4">
-      <div class="carousel w-full rounded-md">
-        <div id="slide1" class="carousel-item relative w-full">
-          <img
-            src="/asssets/images/slides/img2.png"
-            class="w-full" />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide4" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-        <div id="slide2" class="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-            class="w-full" />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide1" class="btn btn-circle">❮</a>
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-        <div id="slide3" class="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-            class="w-full" />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide2" class="btn btn-circle">❮</a>
-            <a href="#slide4" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-        <div id="slide4" class="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-            class="w-full" />
-          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide3" class="btn btn-circle">❮</a>
-            <a href="#slide1" class="btn btn-circle">❯</a>
-          </div>
+    </div>
+  </section>
+  <!-- Header Menu Finish -->
+  <!-- Slide Start -->
+  <section class="container mx-auto mt-4">
+    <div class="carousel w-full rounded-md">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="/asssets/images/slides/img2.png" class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
         </div>
       </div>
-    </section>
-    
-    <!-- Slide End -->
-     <section class="container mx-auto mt-5 flex gap-6 justify-between border-t pt-5">
-      <div class="card bg-base-100  shadow-xl">
-        <figure>
-          <img
-            src="/asssets/images/card3.png"
-            alt="Irem" />
-        </figure>
-        <div class="card-body bg-gray-300 text-black">
-          <h2 class="card-title">Size ozel doktorlar</h2>
-          <p>Uzman doktorlarımızla yüzyüze yapacaığınız seanlar</p>
-          <div class="card-actions justify-end">
-            <button class="btn bg-[#975F9E] text-white ">Randevu Al</button>
-          </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp" class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
         </div>
       </div>
-      <div class="card bg-base-100  shadow-xl">
-        <figure>
-          <img
-            src="/asssets/images/card2.png"
-            alt="Irem" />
-        </figure>
-        <div class="card-body bg-gray-300 text-black">
-          <h2 class="card-title">Yüzyüze Görüşme!</h2>
-          <p>Uzman doktorlarımızla yüzyüze yapacaığınız seanlar</p>
-          <div class="card-actions justify-end">
-            <button class="btn bg-[#975F9E] text-white ">Randevu Al</button>
-          </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp" class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
         </div>
       </div>
-      <div class="card bg-base-100  shadow-xl">
-        <figure>
-          <img
-            src="/asssets/images/card1.png"
-            alt="Irem" />
-        </figure>
-        <div class="card-body bg-gray-300 text-black">
-          <h2 class="card-title">Sorunlarınıza objektif çözümler</h2>
-          <p>Uzman doktorlarımızla yüzyüze yapacaığınız seanlar</p>
-          <div class="card-actions justify-end">
-            <button class="btn bg-[#975F9E] text-white ">Randevu Al</button>
-          </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp" class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
         </div>
       </div>
-      
-     </section>
-     <section>
-      <div class="flex gap-5">
-        <div>
-          <span class="countdown font-mono text-4xl">
-            <span style="--value:15;"></span>
-          </span>
-          days
-        </div>
-        <div>
-          <span class="countdown font-mono text-4xl">
-            <span style="--value:10;"></span>
-          </span>
-          hours
-        </div>
-        <div>
-          <span class="countdown font-mono text-4xl">
-            <span style="--value:24;"></span>
-          </span>
-          min
-        </div>
-        <div>
-          <span class="countdown font-mono text-4xl">
-            <span style="--value:${counter};"></span>
-          </span>
-          sec
+    </div>
+  </section>
+
+  <!-- Slide End -->
+  <section class="container mx-auto mt-5 flex gap-6 justify-between border-t pt-5">
+    <div class="card bg-base-100  shadow-xl">
+      <figure>
+        <img src="/asssets/images/card3.png" alt="Irem" />
+      </figure>
+      <div class="card-body bg-gray-300 text-black">
+        <h2 class="card-title">Size ozel doktorlar</h2>
+        <p>Uzman doktorlarımızla yüzyüze yapacaığınız seanlar</p>
+        <div class="card-actions justify-end">
+          <button class=" container btn bg-[#975F9E] text-white ">Randevu Al</button>
         </div>
       </div>
-     </section>
+    </div>
+    <div class="card bg-base-100  shadow-xl">
+      <figure>
+        <img src="/asssets/images/card2.png" alt="Irem" />
+      </figure>
+      <div class="card-body bg-gray-300 text-black">
+        <h2 class="card-title">Yüzyüze Görüşme!</h2>
+        <p>Uzman doktorlarımızla yüzyüze yapacaığınız seanlar</p>
+        <div class="card-actions justify-end">
+          <button class="btn bg-[#975F9E] text-white ">Randevu Al</button>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-base-100  shadow-xl">
+      <figure>
+        <img src="/asssets/images/card1.png" alt="Irem" />
+      </figure>
+      <div class="card-body bg-gray-300 text-black">
+        <h2 class="card-title">Sorunlarınıza objektif çözümler</h2>
+        <p>Uzman doktorlarımızla yüzyüze yapacaığınız seanlar</p>
+        <div class="card-actions justify-end">
+          <button class="btn bg-[#975F9E] text-white ">Randevu Al</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section>
+    <div class="flex gap-5">
+      <div>
+        <span class="countdown font-mono text-4xl">
+          <span style="--value:15;"></span>
+        </span>
+        days
+      </div>
+      <div>
+        <span class="countdown font-mono text-4xl">
+          <span style="--value:10;"></span>
+        </span>
+        hours
+      </div>
+      <div>
+        <span class="countdown font-mono text-4xl">
+          <span style="--value:24;"></span>
+        </span>
+        min
+      </div>
+      <div>
+        <span class="countdown font-mono text-4xl">
+          <span style="--value:${counter};"></span>
+        </span>
+        sec
+      </div>
+    </div>
+  </section>
   </body>
+
 </html>
