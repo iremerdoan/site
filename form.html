@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotus Psikiyatri Kliniği</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!--
+min-h-screen bg-gradient-to-br from-blue-400 via-purple-500 to-red-500 -> Arka plan rengi geçişli
+text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-red-500 to-blue-500 -> yazı rengi geçişi
+-->
+
+<body class="min-h-screen bg-gradient-to-br from-purple-800 via-pink-300 to-fuchsia-950 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg">
+        <!-- Başlık Kısmı -->
+        <div class="bg-purple-200 rounded-t-xl px-8 py-6">
+            <h1 class="text-2xl font-bold text-purple-600">Lotus Psikiyatri Kliniği</h1>
+            <p class="mt-2 text-purple-600">Online Randevu </p>
+        </div>
+
+        <form class="p-8 space-y-6">
+            <!-- Kişisel Bilgiler Bölümü -->
+            <div class="space-y-6">
+                <h2 class="text-xl font-semibold text-gray-900 border-b pb-2">Kişisel Bilgiler</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- İsim kısmı -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Ad Soyad</label>
+                        <input type="text" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                            placeholder="Adınız Soyadınız">
+                    </div>
+
+                    <!-- Doğum Tarihi -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Doğum Tarihi</label>
+                        <input type="date" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+
+                    <!-- Telefon -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Telefon Numarası</label>
+                        <input type="tel" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                            placeholder="5XX XXX XX XX">
+                    </div>
+
+                    <!-- E-posta -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">E-posta</label>
+                        <input type="email" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                            placeholder="ornek@email.com">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Randevu Detayları Bölümü -->
+            <div class="space-y-6">
+                <h2 class="text-xl font-semibold text-gray-900 border-b pb-2">Randevu Detayları</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Doktor Seçimi -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Doktor Seçimi</label>
+                        <select required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                            <option value="">Doktor seçiniz</option>
+                            <option value="dr1">Dr. Gülseren Budayıcıoğlu </option>
+                            <option value="dr2">Prof. Dr. Ayşe Yalın </option>
+                            <option value="dr3">Prof. Dr. Fatih Ünal</option>
+                            <option value="dr4">Prof. Dr. Engin Dudu Turan</option>
+                            <option value="dr5">Prof. Dr. Yıldırım Beyatlı Doğan</option>
+                            <option value="dr7">Dr. Uğur Ergün</option>
+                            <option value="dr8">Dr. Melehat Sönmez</option>
+                            <option value="dr9">Dr. Emrah Orkun Ateş</option>
+                            <option value="dr10">Dr. Serkan Şahin</option>
+                            <option value="dr11">Dr. Mustafa Tatlı </option>
+                            <option value="dr12">Dr. Emine Ak Aygün</option>
+                            <option value="dr13">Dr. Seçil Çetinkaya</option>
+                            <option value="dr14">Dr. Aygün Yusifova</option>
+                            <option value="dr15">Dr. Saime Esra Teker</option>
+                            <option value="dr16">Drç Elif Yılmaz</option>
+                            <option value="dr17">Dr. Nazım Yıldız</option>
+                            <option value="dr18">Drç Telli Zadehgan Afshord</option>
+                            <option value="dr19">Dr. Aynur Nabi</option>
+                            <option value="dr20">Dr. Selenge Baljinyam</option>
+                            <option value="dr21">Dr. Özer Karabaş</option>
+                            <option value="dr22">Dr. Türkan Ağakişiyeva</option>
+
+
+
+
+                        </select>
+                    </div>
+
+                    <!-- Randevu Tarihi -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Randevu Tarihi</label>
+                        <input type="date" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+
+                    <!-- Randevu Saati -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Randevu Saati</label>
+                        <select required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                            <option value="">Saat seçiniz</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+
+                        </select>
+                    </div>
+
+                    <!-- Randevu Türü -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Randevu Türü</label>
+                        <select required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                            <option value="">Randevu türü seçiniz</option>
+                            <option value="Yüz yüze">Yüz yüze Randevu</option>
+                            <option value="Online">Online Randevu</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Ek Notlar -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Ek Notlar (İsteğe Bağlı)</label>
+                    <textarea rows="4"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                        placeholder="Doktora iletmek istediğiniz özel notlar..."></textarea>
+                </div>
+            </div>
+
+            <!-- KVKK Onayı -->
+            <div class="flex items-start">
+                <input type="checkbox" required
+                    class="mt-1 h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                <label class="ml-2 block text-sm text-gray-700">
+                    Kişisel verilerimin işlenmesine ilişkin aydınlatma metnini okudum ve onaylıyorum.
+                </label>
+            </div>
+
+            <!-- Gönder Butonu -->
+            <button type="submit"
+                class="w-full bg-indigo-600 text-white py-3 px-4 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-colors">
+                Randevu Talebi Gönder
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
